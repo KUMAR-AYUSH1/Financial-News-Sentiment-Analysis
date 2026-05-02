@@ -3,6 +3,8 @@ name: CICD + DOCKER
 on:
     push:
         branches: [ main ]
+    workflow_dispatch:
+        # for manual trigger
 
 jobs:
     build:
