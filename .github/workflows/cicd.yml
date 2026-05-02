@@ -1,0 +1,21 @@
+name: CICD + DOCKER
+
+on:
+    push:
+        branches: [ main ]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - name: docker login
+              uses: docker/login-action@v3
+              with:
+                  username: ${{ secrets.DOCKER_USERNAME }}
+                  password: ${{ secrets.DOCKER_PASSWORD }}
+            - name: docker build
+              run: |
+                  docker build -t financialnewssentimentanalysis .
+                  docker tag financialnewssentimentanalysis:latest ${{ secrets.DOCKER_USERNAME }}/financialnewssentimentanalysis:latest
+                  docker push ${{ secrets.DOCKER_USERNAME }}/financialnewssentimentanalysis:latest
