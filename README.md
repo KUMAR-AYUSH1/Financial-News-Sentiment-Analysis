@@ -65,5 +65,5 @@ Built with:
 
 ## 👨‍💻 Author
 
-**Ayush Kumar**
+**Kumar Ayush**
 
