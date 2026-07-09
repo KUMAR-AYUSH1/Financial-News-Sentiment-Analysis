@@ -56,8 +56,8 @@ Built with:
 * Best Model: Support Vector Classifier (SVC)
 * Evaluation: Accuracy + probability scores
 
-
-
+## use shap to understand word importance
+<img width="1177" height="801" alt="Screenshot 2026-07-09 183713" src="https://github.com/user-attachments/assets/17a61aad-cb5b-48c2-9b0e-9d5f05c38c66" />
 
 
 ## 👨‍💻 Author
