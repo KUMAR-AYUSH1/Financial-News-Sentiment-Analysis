@@ -57,10 +57,7 @@ Built with:
 * Evaluation: Accuracy + probability scores
 
 
-## 🔮 Future Improvements working on
 
-
-* Real-time news web scraping test4.ipynb
 
 
 ## 👨‍💻 Author

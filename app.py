@@ -12,10 +12,10 @@ def predict(text):
 
 
 def main():
-    text = st.text_area("Enter text:", "", height=500)
+    text = st.text_area("Enter text:", "", height=100)
     if st.button("Predict"):
         response = predict(text)
-        st.write("Sentiment is",response['prediction'],"model confidence is ",response['confidence'],"%")
+        st.write("Sentiment is",response['prediction'],"model confidence is ",response['confidence'],"%","SHAP word importance is ",pd.DataFrame(response['SHAP_word_importance']))
 
 if __name__ == "__main__":
     main()
